@@ -1,1 +1,1 @@
-https://stackblitz.com/edit/web-platform-fwhcys?file=timedepositcalculator.html
+https://web-platform-fwhcys.stackblitz.io
