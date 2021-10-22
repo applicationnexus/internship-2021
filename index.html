@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Stop Watch
+        </title>
+        <style>
+            body{
+              display: flex;
+              justify-content: center;
+              padding: 200px 0px 0px 0px;
+            }
+
+            #number{
+              font-size: 50px;
+              width: 100%;
+              padding: 30px 0 30px 0;
+              font-weight: bold;
+            }
+
+            .tb{
+              font-size: 30px;
+            }
+            .tb button{
+              font-size: 20px;
+            }
+            .tb input{
+              font-size: 20px;
+            }
+
+            #buttons button{
+              font-size: 25px;
+              padding: 0px;
+              width: 90px
+            }
+            .btn{
+              margin: 2px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+      <div id="box">
+        <div class="tb">
+          Limit (In Minutes) : <input type="number" id="limit" placeholder="Enter Limit">
+          <button class="tn" id="start" onclick="start()">Set limit </button>
+        </div>
+        <div id="number">
+          <span id="hr">00</span>
+          <span>:</span>
+          <span id="min">00</span>
+          <span>:</span>
+          <span id="sec">00</span>
+        </div>
+        <div id="buttons">
+          <button class="btn" id="start" onclick="start()">Start </button>
+          <button class="btn" id="stop" onclick="stop()">Stop </button>
+          <button class="btn" id="clear" onclick="reset()">Clear </button>
+        </div>
+      </div>
+      <script src="main.js"></script>
+    </body>
+</html>
