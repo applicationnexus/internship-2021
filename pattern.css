@@ -1,0 +1,10 @@
+.body{
+    background: rgb(226, 97, 97);
+    font-size: larger;
+    font-style: italic;
+    text-align: center;
+}
+
+.input[text]{
+    border-radius: 10px;
+}
