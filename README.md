@@ -1,4 +1,4 @@
 # internship-2021 
-https://stackblitz.com/edit/web-platform-xcgmtx?file=index.html
-https://stackblitz.com/edit/web-platform-xcgmtx?file=script.js
-https://stackblitz.com/edit/web-platform-xcgmtx?file=styles.css
+https://stackblitz.com/edit/web-platform-xyw4t6?file=employee.html
+https://stackblitz.com/edit/web-platform-xyw4t6?file=employee.js
+https://stackblitz.com/edit/web-platform-xyw4t6?file=employee.css
