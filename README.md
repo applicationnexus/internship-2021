@@ -1,2 +1,3 @@
 # internship-2021
-https://stackblitz.com/edit/web-platform-uygq4v?file=index.html
+Editor URL:   https://stackblitz.com/edit/web-platform-uvs9jr?file=styles.css
+Application URL:  https://web-platform-uvs9jr.stackblitz.io
