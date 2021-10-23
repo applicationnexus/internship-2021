@@ -21,6 +21,7 @@ function myFunction(){
       
     case "AUD":
       o = a*55.97;
+      alert("The Converted Currency is:\n" +o);
       break;
       
     case "JPY":
