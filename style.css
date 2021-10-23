@@ -1,0 +1,132 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+
+}
+.container
+{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(18, 182, 211);
+}
+.wrapper
+{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-basis: 520px;
+    background: ivory;
+    box-shadow: 0 0 5rem lightgoldenrodyellow;
+
+}
+.title
+{
+    width: 100%;
+}
+.title h1
+{
+
+    color: gold;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: dotted yellow;
+}
+.counter-area
+{
+    margin:  2rem 0;
+    display: flex;
+    justify-content: center;
+}
+.counter-area .timer
+{
+    margin: 0 1.1rem;
+    display: flex;
+    flex-direction: column;
+    width: 8rem;
+    justify-content: center;
+    background: lightyellow;
+    box-shadow: 0 0 1rem brown;
+}
+
+.timer .count
+{
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 6rem;
+
+}
+.timer span
+{
+    color : black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+.input-area
+{
+    display: flex;
+    justify-content: center;
+}
+.input-area input
+{
+    padding: 1rem;
+    height: 3 rem;
+    width: 85%;
+    color: darkred;
+    font-style: inherit;
+    font-size: 1 rem;
+    letter-spacing: 01.1rem;
+    border: 3px solid aquamarine;
+    border-radius: 0.2rem;
+    outline: none;
+    box-sizing: border-box;
+}
+.button-area
+{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+}
+.button-area button
+{
+    margin: 0 2rem;
+    padding: 1rem 0;
+    width: 10rem;
+    color:black;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border: 2px solid skyblue;
+    border-radius: 25px;
+    
+
+}
+
+.button-area button:hover
+{
+    background-color:lightskyblue;
+    text-decoration: gold;
+    outline: 2px solid rgb(214, 214, 223);
+}
+    
+
+#demo
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: darkblue;
+    font-size: larger;
+    position: relative;
+}
