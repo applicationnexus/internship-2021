@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1><small>From:</small></h1>
+<input id="inputkilograms" type="number" placeholder="kilograms" oninput="weightConverter(this.value)" onclick="weightConverter(this.value)"><br>
+<h2><small>To</small></h2>
+<input id="inputpounds" type="number" placeholder="pounds" oninput="weightConverter(this.value)" onclick="weightConverter(this.value)"><br>
+<h3><small>value</small></h3>
+<input id="inputvalue" type="number" placeholder="value" oninput="weightConverter(this.value)" onclick="weightConverter(this.value)"><br>
+<p><h4 style="background-color:DodgerBlue;">converted value(pounds):<span id="outputpounds"></span></p></h4>
+
+<script>
+function weightConverter(valNum){
+document.getElementById("outputpounds").innerHTML=valNum/2.2046;
+}
+
+</script>
+</body>
+</html>
