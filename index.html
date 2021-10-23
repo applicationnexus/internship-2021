@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Document</title>
+        <head>
+            <style>
+                .container{
+                    width: 100%;
+                    position: relative;
+                    
+                }
+                .main{
+                    width: 60%;
+                    height: 100%;
+                    margin-left: 20%;
+                    border: 4px solid grey;
+                    border-bottom: none;
+                }
+                .LeftSide{
+                    width: 25%;
+                    float: left;
+                    height: auto;
+                    margin-left: 20px;
+                    border-right: 4px solid gray;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-align: center;
+                }
+                .RightSide{
+                    width: 35%;
+                    float: left;
+                    margin-left: 20px;
+                    margin-top: 40px;
+                    margin-right: 10px;
+                    text-align: justify;
+                    border-bottom: none;
+                }
+                h1{
+                    border-bottom: 2px solid gray;
+                }
+                p{
+                    border-bottom: 2px solid gray;                   
+                    cursor: pointer;
+                    
+                }
+                .RightStyle{
+                    border: none;
+                }
+            </style>
+             <script>
+                function fun1() {
+                document.getElementById("rightText").innerHTML ="Pyhon Introduction";
+                document.getElementById("rightText1").innerHTML ="Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.";
+                }
+                function fun2() {
+               
+            document.getElementById("rightText").innerHTML ="Python Install";
+            document.getElementById("rightText1").innerHTML ="Pip is installed automatically with Python 2 (>=2.7.9) and Python 3 (>=3.4) installations. The pip command has options for installing, upgrading and deleting packages, and can be run from the Windows command line. By default, pip installs packages located in the Python Package Index (PyPI), but can also install from other indexes. For more information on how to use pip, see the Pip Package Installation instructions below. \n >> pip install python";
+            }
+            function fun3() {
+            
+            document.getElementById("rightText").innerHTML ="Python Syntax";
+            document.getElementById("rightText1").innerHTML =">>print('hello world') output:>>hello world";
+            
+            }
+            function fun4() {
+                document.getElementById("rightText").innerHTML ="Python Indentation ";
+            document.getElementById("rightText1").innerHTML ="Indentation refers to the spaces at the beginning of a code line.Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.Python uses indentation to indicate a block of code.";
+            }
+            function fun5() {
+              
+            document.getElementById("rightText").innerHTML ="Tuples";
+            document.getElementById("rightText1").innerHTML ="Tuples are used to store multiple items in a single variable.Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.A tuple is a collection which is ordered and unchangeable.Tuples are written with round brackets.";
+            
+            
+            }
+            </script>
+        </head>
+    <body class="container">
+        <div class="main">
+        <div class="LeftSide">
+            <h1 class="head">Python</h1>
+            <p onclick="fun1()">Introduction</p>          
+            <p onclick="fun2()">Python Install</p>
+            <p onclick="fun3()">Python Syntax</p>
+            <p onclick="fun4()">Python Indentation</p>
+            <p onclick="fun5()">Tuple</p>
+        </div>
+        <div class="RightSide">
+            <h1 class="RightStyle" id="rightText"></h1>
+            <p class="RightStyle" id ="rightText1">   </p>
+            <h3 class="RightStyle" id ="rightText2">   </h3>
+        </div>
+    </div>
+    </body>
+    </head>
+</html>
