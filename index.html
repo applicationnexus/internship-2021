@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>EMI Loan Calculator</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<h2>EMI Calculator</h2>
+<form name="loan" id="loan">
+<table align="center" >
+
+<tr>
+<td>Loan Amount</td>
+<td><input type="text" name="amt" ></td>
+<td><p id="emi"></p><td>
+</tr>
+
+<tr>
+<td>Repayment in months</td>
+<td><input type="text"  name="mon" ></td>
+<td><p id="emi2"></p><td>
+</tr>
+
+<tr>
+<td>Interest Rate</td>
+<td><input type="text"  name="rate" ></td>
+<td><p id="emi3"></p><td>
+</tr>
+
+<tr>
+<td><button class="button"  type = "button" onclick="reset()"><b>Reset</b></button></td>
+<td><button class="button" id="res" type="button" onclick="calculate();"><b>Submit</b></button></td>
+</tr>
+
+<tr>
+<td>EMI</td>
+<td><input type="text"  name="payment1" ></td>
+<td><p id="payment"></p><td>
+</tr>
+
+<tr>
+<td>Interest Payable</td>
+<td><input type="text"   name="totint1"></td>
+<td><p id="totint"></p><td>
+</tr>
+
+<tr>
+<td>Total Payable</td>
+<td><input type="text" name="totpay1" ></td>
+<td><p id ="totpay"></p><td>
+</tr>
+</table>
+</form>
+
+<script src='index.js'> </script>
+</body>
+</html>
