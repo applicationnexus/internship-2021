@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="index.css">
+		
+</head>
+<body>
+	<h1><img src="logo.png"><font color="Orange">Application<font color="Blue">Nexus<font color="Black">®<br>Qualified Professionals<font color="Orange">2019 </font><br><br>
+	Currency Converter</h1>
+		<label>From:</label><br>
+		<select class="from">
+		<option value="">Select One …</option>
+		<option value="USD">US Dollar</option>
+		<option value="INR">Indian Rupee</option>
+		<option value="EUR">Euro</option>
+		<option value="HKD">Hong Kong Dollar</option>
+		<option value="SGD">Singapore Dollar</option>
+		</select>
+		<br><br>
+
+		<label>To:</label><br>
+		<select class="to">
+		<option value="">Select One …</option>
+		<option value="USD">US Dollar</option>
+		<option value="INR">Indian Rupee</option>
+		<option value="EUR">Euro</option>
+		<option value="HKD">Hong Kong Dollar</option>
+		<option value="SGD">Singapore Dollar</option>
+		</select>
+		<br><br>
+		
+		<label>Amount:</label><br>
+		<input type="text" class="searchBox">
+		<br><br>
+		
+		<button class="convert" type="submit">Convert</button>
+		<br><br>
+
+		<div id="convertamount">
+			<label style="color:blue";>Exchange Rate(INR):<span class="display1"></span></label>
+			<br><br>
+			<label style="color:green";>Converted Amount(INR):<span class="display"> </span></label>
+		</div>
+	<script src="index.js"></script>
+	
+</body>
+</html>
