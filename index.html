@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Autocomplete</h1>
+    <p>Start typing:</p>
+    <form autocomplete="off">
+      <input
+        type="searchfield"
+        name="search"
+        id="search"
+        autocomplete="off"
+        onkeyup="result(this.value)"
+      />
+      <input type="submit" value="Search" />
+      <div id="result"></div>
+    </form>
+  </body>
+</html>
