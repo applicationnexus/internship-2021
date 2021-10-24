@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamin Image Formatting</title>
+	<link rel="stylesheet" href="index.css">
+<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<div id="inputDiv">
+<h1>Dynamic Image Formatting</h1>
+<lable for="source">Image URL:</lable><br>
+<input id="source" type="text" name="source" placeholder="Enter Image Source"/><br>
+<lable for="height">Image Height:</lable><br>
+<input id="height" type="text" name="height" placeholder="Enter Image Height"/><br>
+<lable for="width">Image Width:</lable><br>
+<input id="width" type="text" name="width" placeholder="Enter Image Width"/><br>
+<input id="btn" type="button" value="Submit" onclick="resizeImage()"/>
+</div>
+<div id="outputDiv">
+<div id="divHeader">
+<p>Output Window</p><br>
+<img id="img" src="#"></img>
+</div>
+</div>
+</body>
+</html>
