@@ -1,0 +1,41 @@
+.btn{
+  background-color:grey;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+.btn1{
+  background-color:red;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div[id="divShowData"] {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
