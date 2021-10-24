@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  margin-top: 40px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-size: 30px;
+}
+
+#btn {
+  background-color: #00bfff;
+  color: white;
+  padding: 5px 8px;
+  border: 2px solid #1e8fff;
+  border-radius: 2px;
+}
+
+.select-list {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+label {
+  font-size: small;
+}
+
+select {
+  width: 300px;
+  padding: 5px;
+}
+
+#txtname {
+  width: 300px;
+}
+
+input[type='text'] {
+  padding: 5px;
+}
+
+#answer {
+  background-color: lightgray;
+  height: 30px;
+  padding: 20px;
+  width: 400px;
+  color: darkgreen;
+  font-size: medium;
+}

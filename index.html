@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weight Converter</h1>
+
+      <label class="label"><b>From:</b></label><br />
+      <div class="select-list">
+        <select name="weights1" id="weights1">
+          <option value="Miligram">Miligram</option>
+          <option value="Gram">Gram</option>
+          <option value="Kilogram">Kilogram</option>
+          <option value="Tonne">Tonne</option>
+          <option value="Pounds">Pounds</option>
+          <option value="Ounces">Ounces</option></select><br />
+      </div>
+
+      <label class="label"><b>To:</b></label><br />
+      <div class="select-list">
+        <select name="weights2" id="weights2">
+          <option value="Miligram">Miligram</option>
+          <option value="Gram">Gram</option>
+          <option value="Kilogram">Kilogram</option>
+          <option value="Tonne">Tonne</option>
+          <option value="Pounds">Pounds</option>
+          <option value="Ounces">Ounces</option>
+        </select>
+        <br />
+      </div>
+
+      <label class="label"><b>Value:</b></label><br />
+      <div class="select-list">
+        <input type="text" name="txtname" id="txtname" value="" />
+        <br />
+      </div>
+      <button id="btn" onclick="myFunction()">Convert</button>
+      <p id="answer"></p>
+    </div>
+  </body>
+</html>
