@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: powderblue;
+
+}
+
+.heading h1{
+ 
+  font-size: 40px;
+  text-align: center;
+margin-top: 40px;
+  margin-right: 80px;
+}
+
+.container{
+  font-size: 20px;
+text-align: center;
+  margin-right: 25%;
+  margin-top: 25px;
+}
+
+.input-box input{
+  height: 20px;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+.header{
+  width: 75%;
+position: fixed;
+  right: 0px;
+  color:green;
+border-top: solid;
+  border-width: 4px;
+margin-top:25px;
+}
+
+.check{
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+button{
+  padding: 11px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.display
+{
+    margin-left: 350px;
+}
