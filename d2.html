@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="design.css"/>
+</head>
+<center>
+<body>
+<br><br><br><br><br><br><br>
+<img src="C:\Users\DELL\Desktop\images.png" height="100" width="100" >
+<br>
+<h1 > Hello World </h1>
+<input type="text" id="result" size="25" >
+
+ <br>
+<br>
+&nbsp; &nbsp; &nbsp;<input type="text" id="t2" size="25" > &nbsp; &nbsp;
+<input type ="text" id="t3" size="25" >
+<input type="button" class="subtn"value="Subtract" onclick="subtract()" />
+</center>
+<script type="text/javascript">
+function subtract()
+{
+//var a=parseInt(getElementById("t2").value);
+//var b=parseInt(getElementById("t3").value);
+//var c=parseInt(getElementById("result").value);
+var a=parseInt(document.getElementById('t2').value);
+var b=parseInt(document.getElementById('t3').value);
+
+while(b!=0)
+{
+var borrow=(~a) &b;
+a=a^b;
+b=borrow<<1;
+
+}
+document.write("result is: " +a);
+
+}
+
+</script>
+
+</body>
+</html>
+
