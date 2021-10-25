@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+
+</head>
+<body>
+   <script src="/script.js"></script>
+    <div class="converter-body">
+        <h1 class="converter-title">Data Storage Converter</h1>
+        <h3 class="convert">Convert From</h3>
+        <select id="from">
+            <option disabled="true" selected="true" id="y">-Select Weight-</option>
+            <option >Kilobytes(KB)</option>
+            <option >Megabytes(MB)</option>
+            <option >Gigabytes(GB)</option>
+            <option >Terabytes(TB)</option>
+        </select>
+        <h3 class="convert2">Convert To</h3>
+        <select id="to">
+            <option disabled="true" selected="true">-Select Weight-</option>
+            <option >Kilobytes(KB)</option>
+            <option >Megabytes(MB)</option>
+            <option >Gigabytes(GB)</option>
+            <option >Terabytes(TB)</option>
+        </select>
+        <div>
+            <h3 class="value">value</h3>
+            <input type="text" name="txtname" id="ipval">
+        </div> 
+        <div id="btn">
+            <button onclick="getInputValue();">CONVERT</button>
+        </div>
+    </div>
+    <div>
+        <h3 class="conversion">Conversion</h3>
+        <input name="txtname" id="conversion" disabled>
+    </div>
+</body>
+</html>
+
+
+
+    
