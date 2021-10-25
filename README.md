@@ -1,3 +1,4 @@
-# internship-2021
-https://stackblitz.com/edit/web-platform-klcpys?file=style.css
-https://web-platform-klcpys.stackblitz.io
+Q.
+Create the following remplate using HTML amd CSS.
+
+https://web-platform-xvmlhw.stackblitz.io
