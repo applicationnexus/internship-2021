@@ -1,0 +1,23 @@
+.converter-body{
+    background-color:rgba(41, 156, 202, 0.658);
+    margin : auto;
+    height: 90vh;
+    width: 60vw;
+    
+}
+.first{
+
+    margin-left: 56px;
+    margin-top: 50px;
+}
+.sec{
+    color: red;
+}
+#data{
+    display: inline-block;
+    padding-left: 50px;
+    color:green;
+    font-size: 25px;
+    font-weight: 55px;
+    line-height: 50px;
+}
