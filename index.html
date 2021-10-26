@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Converter</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<h1>Data Storage Converter</h1><br><br>
+	<div id="outerDiv">
+		<div id="innerDiv">
+
+			<div style="padding: 50px;">
+			<label>Convert from:</label><br>
+			 <select>
+			 	
+                <option value="220">Kilobytes [kB]</option>
+                <option value="222">Megabytes [MB]</option>
+                <option value="224">Gigabytes [GB]</option>
+                <option value="226">Terabytes [TB]</option>
+            </select>
+            <br><br>
+            <label>Convert to:</label><br>
+            <select>
+                <option value="220">Kilobytes [kB]</option>
+                <option value="222">Megabytes [MB]</option>
+                <option value="224">Gigabytes [GB]</option>
+            	<option value="226">Terabytes [TB]</option>
+            </select>
+            <br><br>
+            <label for="valuetoconvert" class="heading">Value:</label><br>
+       		<input type="number" step="any" name="valuetoconvert" id="valuetoconvert" class="calculatorInput" required="required" inputmode="decimal"/>
+
+            </div>
+
+			<div id="btnDiv">
+				<button>Convert</button>
+			</div>
+		</div>	
+	</div>
+
+	<div id="answerDiv">
+		<h2>Convert 1024 Gigabytes into Terabytes</h2>
+		<div id="ansInnerDiv">
+		
+		</div>
+		</div>
+	<br><br>
+</body>
+</html>
