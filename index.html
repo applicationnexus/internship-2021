@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>MY_ANQP_ASSIGNMENT</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  
+  <head>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300&subset=latin,latin-ext);
+
+      * {
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial,
+          sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1,
+      h2 {
+        color: #f5f7fa;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        margin-top: 20px;
+      }
+
+      h2 {
+        margin: 20px 0;
+        font-weight: 100;
+      }
+
+      body {
+        background: #696967;
+      }
+
+      table {
+        text-align: left;
+        width: 640px;
+        margin: 30px auto;
+        border-radius: 3px;
+        background-color: #fff;
+      }
+
+      table th {
+        padding: 10px;
+      }
+
+      table tr:nth-child(odd) {
+        background-color: #f5f7fa;
+      }
+
+      table td {
+        padding: 10px 15px;
+        color: #434a54;
+      }
+
+      .amount {
+        color: #da4453;
+        text-align: right;
+      }
+
+      #button {
+              position: relative;
+              top: 0;
+              color: #f5f7fa;
+              padding: 20px;
+              text-align: center;
+              line-height: 24px;
+              width: 200px;
+              background-color: #09aa1f;
+              border-radius: 3px;
+              cursor: pointer;
+              margin: auto;
+              box-shadow: 0 3px #0f8105;
+              transition: 0.1s ease;
+      }
+
+      #button:active {
+              position: relative;
+              box-shadow: 0 0px #0a9e0a;
+              top: 3px;
+              box-shadow: 0 0;
+      }
+
+      #form-box {
+                  width: 650px;
+                  margin: 30px auto;
+                  padding-left: 15px;
+      }
+
+      form {
+        color: #fff;
+        margin: auto;
+      }
+
+      form select,
+      form input {
+        margin-bottom: 25px;
+        color: #434a54;
+        padding: 10px;
+        width: 200px;
+        border-radius: 3px;
+        border: 0;
+      }
+
+               form selectactive,
+                  form inputactive {
+                      border: 1px solid #20b413;
+                          transition: 0.2s ease;
+      }
+
+                 form div {
+                     display: inline-block;
+                            margin-right: 10px;
+      }
+
+      form span {
+              font-size: 1.3em;
+                  font-weight: 100;
+                      display: inline-block;
+                         width: 100px;
+      }
+
+      #type {
+        width: 50px;
+      }
+
+      #date {
+        width: 141px;
+      }
+
+      #amount {
+        width: 100px;
+      }
+
+      #if-empty {
+        text-align: center;
+      }
+
+      .center {
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <h2>Add a new item:</h2>
+
+  <div id="form-box">
+    <form>
+      <div>
+        <span>Type:</span>
+        <select name="type">
+          <option value="card">Card</option>
+          <option value="cash">Cash</option>
+        </select>
+      </div>
+
+      <div>
+        <span>Name:</span>
+        <input type="text" name="item-name" placeholder="What did you spend on?" />
+      </div>
+
+      <div><span>Date:</span> <input type="date" name="date" /></div>
+
+      <div>
+        <span>Amount:</span>
+        <input type="number" name="amount" placeholder="How much?" />
+      </div>
+    </form>
+  </div>
+
+  <div id="button"><span>Add a new expense</span></div>
+
+  <table>
+    <tr>
+      <th id="type" class="center">type</th>
+      <th>name</th>
+      <th id="date">date</th>
+      <th style="text-align: right" id="amount">amount</th>
+    </tr>
+    <tr id="if-empty">
+      <td colspan="4"><span>***added expense show here***</span></td>
+    </tr>
+  </table>
+
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                   <script src="./script.js"></script>
+</body>
+
+</html>
+<script>
+  $(document).ready(function () {
+           $name = $('input[name="item-name"');
+           $amount = $('input[name="amount"');
+           $type = $('select[name="type"');
+           $date = $('input[name="date"');
+
+
+    var formatDate = function (d) {
+      var d = d.split('-');
+
+      var dt = new Date(d[0], d[1], d[2]);
+      var formattedDate = '';
+
+      var months = [
+                'January',
+                'February',
+                'March',
+                'April',
+                'May',
+                'June',
+                'July',
+                'August',
+                'September',
+                'October',
+                'November',
+                'December',
+      ];
+
+      formattedDate += months[dt.getMonth() - 1];
+
+      var formattedDay;
+
+      switch (d[2].substring(1)) {
+        case '1':
+          formattedDay = parseInt(d[2]) + 'st';
+          break;
+        case '2':
+          formattedDay = parseInt(d[2]) + 'nd';
+          break;
+        case '3':
+          formattedDay = parseInt(d[2]) + 'rd';
+          break;
+        default:
+          formattedDay = parseInt(d[2]) + 'th';
+      }
+
+      formattedDate += ' ' + formattedDay;
+
+      return formattedDate;
+    };
+
+    $('#button').click(function () {
+      var type_icon;
+      if ($type.val() == 'card') {
+        type_icon = '<i>Card</i>';
+      } else if ($type.val() == 'cash') {
+        type_icon = '<i>Cash</i>';
+      }
+
+      var form_validated = true;
+
+      if (form_validated) {
+        $('table tr:first').after('<tr><td>' + type_icon +'</td><td>' + $name.val() +'</td><td>' + formatDate($date.val()) +'</td><td class="amount">$' +$amount.val() +'</td></tr>');
+        $date.val(null);
+        $amount.val(null);
+        $name.val(null);
+        $('#if-empty').remove();
+
+
+      }
+    });
+  });
+</script>
